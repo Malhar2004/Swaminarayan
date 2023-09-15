@@ -10,3 +10,6 @@ def register(request):
 
 def admin_login(request):
     return render(request, "appointment/admin_login.html")
+
+def visit(request):
+    return render(request, "appointment/visit.html")
