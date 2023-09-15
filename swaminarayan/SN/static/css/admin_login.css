@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+    background-color: #f4f4f4;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    
+}
+
+.appoinment-details-div{
+    margin-top: 80px;
+    margin-left: 40px;
+}
+
+table{
+    width: 90%;
+    border-collapse: collapse;
+}
+
+th,td{
+    border: 1px solid black;
+    text-align: left;
+    
+}
+
+th{
+    background-color: #bbc8ef;
+}
