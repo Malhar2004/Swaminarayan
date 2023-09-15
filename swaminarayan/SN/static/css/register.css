@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-div{
+    display: flex;
+    width: 80%;
+    height: 90vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.left-div{
+    width: 40%;
+    background-image: url("/static/images/reg-image.png");
+    background-size: cover;
+    opacity: 0.8;
+
+}
+
+.left-div .text{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #b81b1d;
+}
+
+
+.right-div{
+    width: 60%;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.form{
+    width: 80%;
+    /* border: 1px solid blue; */
+    
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+.input-field{
+    width: 90%;
+    height: 35px;
+    padding-left: 5px;
+}
+
+
+.belong{
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-time{
+
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+.address{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+.submit-btn-div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    /* border: 1px solid red; */
+}
+
+.submit-btn{
+    padding: 10px 20px;
+    background-color: #ee4a4f;
+    color: white;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}

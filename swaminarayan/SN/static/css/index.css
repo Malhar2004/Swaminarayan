@@ -1,1 +1,147 @@
-# this  is css
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+    background-color: #f4f4f4;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.menu ul a{
+    text-decoration: none;
+    color: #ed3237;
+    
+}
+
+.menu ul a::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color: #f56267;
+    display: block;
+    transition: .5s ease-in-out;
+  }
+  
+  .menu ul a:hover::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: #f56267;
+    display: block;
+  }
+
+.menu ul li{
+    list-style: none;
+}
+
+.container{
+    display: flex;
+    /* border: 1px solid red; */
+    margin-top: 75px;
+    
+}
+
+.left-div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    width: 250px;
+    height: 90vh;
+    position: fixed;
+    padding-top: 70px;
+    
+}
+
+.left-div h2{
+    color: #b81b1d;
+}
+
+.appoinment-btn{
+    padding: 10px 20px;
+    background-color:#ee4a4f;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 2px;
+    font-weight: 700;
+}
+.admin-login-btn{
+    padding: 10px 20px;
+    background-color:#ee4a4f;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 2px;
+    font-weight: 700;
+}
+
+.main-div{
+    width: 100%;
+    margin-left: 250px;
+    /* border: 1px solid green; */
+}
+
+.main-div img{
+    width: 100%;
+
+}
+.main-time-div{
+    width: 85%;
+    height: fit-content;
+    background-color: #ec939326;  
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #ed3237;
+
+
+
+}
+
+.people-time{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 5px;
+}
+
+hr{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text h3{
+    color: #ed3237;
+}
+
+.text p{
+    font-size: 14px;
+}
+
+.map{
+
+    width: 100%;
+   
+}
+
+.map iframe{
+    width: 700px;
+}

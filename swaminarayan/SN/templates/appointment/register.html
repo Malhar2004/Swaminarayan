@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&family=Roboto:wght@100;300;400;500&display=swap"
+        rel="stylesheet">
+    <title>Registration</title>
+</head>
+
+<body>
+    <div class="main-div">
+        <div class="left-div">
+            <div class="text">
+                <h3 style="letter-spacing: 3px;">Swaminarayan</h3>
+                <h1>Akshardham</h1>
+                <h3 style="letter-spacing: 3px;">New Delhi</h3>
+            </div>
+        </div>
+        <div class="right-div">
+            <form action="" method="POST" class="form">
+                <!-- personal details  -->
+                <h4>Personal Details</h4><br>
+                <div class="grid">
+                    <div class="block">
+                        <label for="name">Full Name</label><br>
+                        <input type="text" class="input-field" placeholder="Full Name" required><br><br>
+                    </div>
+                    <div class="block">
+                        <label for="number">Phone Number</label><br>
+                        <input type="tel" class="input-field" placeholder="Phone Number" required><br><br>
+                    </div>
+                    <div class="block">
+                        <label for="date">Birth Date</label><br>
+                        <input type="text" class="input-field" onfocus="(this.type='date')" placeholder="Date of birth"
+                            required><br>
+                    </div>
+                </div><br>
+                <!-- belongs to  -->
+                <h4>You are belongs to?</h4><br>
+                <div class="belong">
+                    <div class="opd">
+                        <input type="radio" name="belong" value="Opd">Opd
+                    </div>
+                    <div class="locals">
+                        <input type="radio" name="belong" value="local">Local
+                    </div>
+                    <div class="outsiders">
+                        <input type="radio" name="belong" value="outsider">Outsider
+                    </div>
+
+                </div><br>
+                <!-- appoinment date and time  -->
+                <h4>Appointment Date & Time</h4><br>
+                <div class="date-time">
+                    <div class="appoi-date">
+                        <label for="date">Appointment Date</label>
+                        <input type="text" onfocus="(this.type='date')" placeholder="Date" class="input-field" required>
+                    </div>
+                    <div class="appoi-time">
+                        <label for="time">Appointment Time</label>
+                        <select name="appointment_time" class="input-field">
+                            <option value="">Time</option>
+                            {% for time_slot in available_time_slots %}
+                            <option value="{{ time_slot }}">{{ time_slot }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                </div><br>
+                <!-- address details  -->
+                <h4>Address Details</h4><br>
+                <div class="address">
+                    <div class="block">
+                        <label for="address">Address</label><br>
+                        <input type="text" placeholder="Address" class="input-field" required><br><br>
+                    </div>
+                    <div class="block">
+                        <label for="pin-code">Pin Code</label><br>
+                        <input type="text" placeholder="Pin Code" class="input-field" required><br><br>
+                    </div>
+                    <div class="block">
+                        <label for="state">State</label><br>
+                        <input type="text" placeholder="State" class="input-field" required><br><br>
+                    </div>
+                    <div class="block">
+                        <label for="city">City</label>
+                        <input type="text" placeholder="city" class="input-field" required>
+                    </div>
+                </div>
+                <!-- submit button  -->
+                <div class="submit-btn-div">
+                    <input type="submit" value="Submit" class="submit-btn">
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
