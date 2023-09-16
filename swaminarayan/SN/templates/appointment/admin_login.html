@@ -1,17 +1,14 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/admin_login.css' %}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&family=Roboto:wght@100;300;400;500&display=swap"
-        rel="stylesheet">
     <title>Admin Login</title>
 </head>
+
 <body>
     <!-- header  -->
     <header>
@@ -22,38 +19,32 @@
             </div>
         </div>
     </header>
-    <!-- appointments details  -->
-    <div class="appoinment-details-div">
-    <h3>Appointments Details</h3><br>
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Phone Number</th>
-            <th>DOB</th>
-            <th>Belongs to</th>
-            <th>App Date</th>
-            <th>App Time</th>
-            <th>Address</th>
-            <th>Pin code</th>
-            <th>State</th>
-            <th>City</th>
 
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-            <td>10</td>
+    <!--Admin login  -->
+    <div class="main">
+        <div class="form-div">
+            <!-- login form  -->
+            <form class="login-form">
+                <div class="title">
+                    <h1>Login</h1>
+                </div><br>
 
-        </tr>
-    </table>
-</div>
+                <input type="email" class="input-field" placeholder="Email" required><br><br>
+
+                <input type="password" class="input-field" placeholder="Password" required><br><br>
+
+                <input type="submit" value="Login" class="btn"><br>
+
+
+            </form>
+
+        </div>
+
+        <div class="welcome-div">
+            <h1>WELCOME.</h1>
+        </div>
+    </div>
 
 </body>
+
 </html>

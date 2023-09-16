@@ -13,3 +13,4 @@ def admin_login(request):
 
 def visit(request):
     return render(request, "appointment/visit.html")
+
