@@ -1,17 +1,19 @@
-// Get reference to the fixed div
-const fixedDiv = document.querySelector('.left-div');
+const left_div = document.querySelector(".left-div");
+const cls = document.querySelector(".close");
+const arrow = document.querySelector(".arrow");
 
-// Define the scroll trigger point (in pixels)
-const scrollTriggerPoint = 200; // Adjust this value as needed
+cls.addEventListener("click", () => {
+    left_div.classList.add('hide-left-div');
+    arrow.classList.add('display-arrow');
+    cls.classList.add('hide-close');
+    
+    
+});
 
-// Listen for scroll events
-window.addEventListener('scroll', () => {
-    // Check if the scroll position has reached the trigger point
-    if (window.scrollY >= scrollTriggerPoint) {
-        // Set scrollTop to scroll up the div
-        fixedDiv.scrollTop = window.scrollY - scrollTriggerPoint;
-    } else {
-        // Reset scrollTop if not at the trigger point
-        fixedDiv.scrollTop = 0;
-    }
+arrow.addEventListener("click", () => {
+    arrow.classList.remove('display-arrow');
+    cls.classList.remove('hide-close');
+    left_div.classList.remove('hide-left-div');
+
+
 });

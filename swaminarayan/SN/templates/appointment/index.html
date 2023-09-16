@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&family=Roboto:wght@100;300;400;500&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ab5e4afff4.js" crossorigin="anonymous"></script>
     <title>Title</title>
 </head>
 
@@ -44,57 +45,71 @@
         </div>
     </header>
 
-    <div class="container">
-        <!-- left div -->
-        <div class="left-div">
-            <h2>TIMMING</h2><br>
-            <div class="main-time-div">
-                <div class="people-time">
-                    <div class="text">
-                        <h3>OPD</h3>
-                        <p>Mon-Fri</p>
-                    </div>
-                    <div class="time">
-                        <p>10am-3pm</p>
-                    </div>
-                </div>
-                <hr>
-                <div class="people-time">
-                    <div class="text">
-                        <h3>Locals</h3>
-                        <p>Mon-Fri</p>
-                    </div>
-                    <div class="time">
-                        <p>10am-3pm</p>
-                    </div>
-                </div>
-                <hr>
-                <div class="people-time">
-                    <div class="text">
-                        <h3>Outsiders</h3>
-                        <p>Mon-Fri</p>
-                    </div>
-                    <div class="time">
-                        <p>10am-3pm</p>
-                    </div>
-                </div>
 
-            </div><br>
+    <!-- left div -->
+    <div class="left-div">
 
-            <!-- appoinment button / -->
-            <a class="appoinment-btn" href="/reg">Book Appoinment</a><br>
-            <a class="check" href="#">Check Appoinment</a>
+        <div class="icon-div">
+            <div class="close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="arrow">
+                <i class="fa-solid fa-arrow-right arrow"></i>
+            </div>
         </div>
 
-        <div class="main-div">
+        <h2>TIMMING</h2><br>
+        <div class="main-time-div">
+            <div class="people-time">
+                <div class="text">
+                    <h3>OPD</h3>
+                    <p>Mon-Fri</p>
+                </div>
+                <div class="time">
+                    <p>10am-3pm</p>
+                </div>
+            </div>
+            <hr>
+            <div class="people-time">
+                <div class="text">
+                    <h3>Locals</h3>
+                    <p>Mon-Fri</p>
+                </div>
+                <div class="time">
+                    <p>10am-3pm</p>
+                </div>
+            </div>
+            <hr>
+            <div class="people-time">
+                <div class="text">
+                    <h3>Outsiders</h3>
+                    <p>Mon-Fri</p>
+                </div>
+                <div class="time">
+                    <p>10am-3pm</p>
+                </div>
+            </div>
 
-            <img src="{% static 'images/akshardham_facts_and_figure_banner.jpg' %}" alt="">
+        </div><br>
 
-        </div>
+        <!-- appoinment button / -->
+        <a class="appoinment-btn" href="/reg">Book Appoinment</a><br>
+        <a class="check" href="#">Check Appoinment</a>
+    </div>
+
+    <div class="main-div">
+
+        <img src="{% static 'images/akshardham_facts_and_figure_banner.jpg' %}" alt="">
+
+
+    </div>
+
+    
+    <div class="footer-image">
+        <img src="{% static 'images/bottomart_10.png' %}" alt="">
     </div>
 
     <footer>
-        <img src="{% static 'images/bottomart_10.png' %}" alt="">
 
         <div class="footer-main">
             <div class="heading">
@@ -105,5 +120,6 @@
     </footer>
 
 </body>
+<script src="{% static 'js/index.js' %}"></script>
 
 </html>
